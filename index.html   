@@ -1,0 +1,692 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{BRAND_NAME}} - Never Miss Another Call | 24/7 AI Receptionist</title>
+    <meta name="description" content="Turn every ring into revenue with a 24/7 AI receptionist. Answers, qualifies & books appointments while you focus on your business.">
+    
+    <!-- Preconnect to external resources -->
+    <link rel="preconnect" href="https://player.vimeo.com">
+    <link rel="dns-prefetch" href="https://player.vimeo.com">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400..700&display=swap" rel="stylesheet">
+    
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container">
+            <div class="nav-wrapper">
+                <a href="/" class="logo">
+                    <img src="{{LOGO_URL}}" alt="{{BRAND_NAME}} Logo" class="logo-img" loading="eager" fetchpriority="high">
+                </a>
+        
+                <ul class="nav-menu">
+                    <li><a href="#how-it-works">How It Works</a></li>
+                    <li><a href="#features">Features</a></li>
+                    <li><a href="#pricing">Pricing</a></li>
+                    <li><a href="#industries">Industries</a></li>
+                </ul>
+                
+                <div class="nav-actions">
+                    <a href="tel:+18483455850" class="btn btn-ghost">
+                        <span class="phone-ring">
+                            <span class="ring-animate"></span>
+                            <span class="ring-dot"></span>
+                        </span>
+                        Call Demo Line
+                    </a>
+                    <a href="#get-started" class="btn btn-primary">Get Started Free</a>
+                </div>
+                
+                <button class="mobile-menu-toggle">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section with Video and Opt-in -->
+    <section class="hero">
+        <div class="container">
+            <div class="hero-grid">
+                <!-- Left side: Headline + Video -->
+                <div class="hero-content">
+                    <div class="hero-badge">
+                        <span class="pulse"></span>
+                        <span>★ 4.9/5 from 2,800+ local businesses</span>
+                    </div>
+                    
+                    <h1 class="hero-title">
+                        <span class="headline-gradient">Never Miss Another Call</span>
+                        <span class="title-break">Turn Every Ring Into <span class="text-gradient">Revenue, 24/7</span></span>
+                    </h1>
+                    
+                    <p class="hero-subtitle">
+                        AI receptionist answers, qualifies and books appointments in under 60 seconds. 
+                        Costs less than a cup of coffee per day.
+                    </p>
+
+                    <!-- Video Container -->
+                    <div class="hero-video">
+                        <iframe 
+                            src="{{VIDEO_URL}}" 
+                            allow="autoplay; fullscreen" 
+                            allowfullscreen
+                            style="width:100%;height:100%;position:absolute;left:0px;top:0px;"
+                            frameborder="0">
+                        </iframe>
+                    </div>
+                    
+                    <div class="hero-trust">
+                        <div class="trust-item">
+                            <svg width="20" height="20" viewBox="0 0 20 20" fill="currentColor">
+                                <path d="M10 2L12.39 7.26L18.18 8.27L14.09 12.14L15.18 17.94L10 15.27L4.82 17.94L5.91 12.14L1.82 8.27L7.61 7.26L10 2Z"/>
+                            </svg>
+                            <span>No Setup Required</span>
+                        </div>
+                        <div class="trust-item">
+                            <svg width="20" height="20" viewBox="0 0 20 20" fill="currentColor">
+                                <path d="M10 2C5.58 2 2 5.58 2 10C2 14.42 5.58 18 10 18C14.42 18 18 14.42 18 10C18 5.58 14.42 2 10 2ZM8 13.5L4.5 10L5.91 8.59L8 10.67L14.09 4.59L15.5 6L8 13.5Z"/>
+                            </svg>
+                            <span>Keep Your Number</span>
+                        </div>
+                        <div class="trust-item">
+                            <svg width="20" height="20" viewBox="0 0 20 20" fill="currentColor">
+                                <path d="M10 2C8.89 2 8 2.89 8 4C8 5.11 8.89 6 10 6C11.11 6 12 5.11 12 4C12 2.89 11.11 2 10 2ZM10 8C7.79 8 6 9.79 6 12C6 14.21 7.79 16 10 16C12.21 16 14 14.21 14 12C14 9.79 12.21 8 10 8Z"/>
+                            </svg>
+                            <span>30-Day Guarantee</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Right side: Opt-in Form -->
+                <div class="hero-optin">
+                    <div class="optin-card">
+                        <h3 class="optin-title">See Your AI Receptionist in Action</h3>
+                        <p class="optin-subtitle">Get instant access to a personalized demo</p>
+                        
+                        <form action="https://app.getresponse.com/add_subscriber.html" accept-charset="utf-8" method="post" class="optin-form">
+                            <div class="form-group">
+                                <input 
+                                    type="text" 
+                                    name="name" 
+                                    placeholder="Business Name" 
+                                    required
+                                    class="form-input"
+                                >
+                            </div>
+                            
+                            <div class="form-group">
+                                <input 
+                                    type="email" 
+                                    name="email" 
+                                    placeholder="Business Email" 
+                                    required
+                                    class="form-input"
+                                >
+                            </div>
+                            
+                            <div class="form-group">
+                                <input 
+                                    type="tel" 
+                                    name="phone" 
+                                    placeholder="Phone Number (Optional)" 
+                                    class="form-input"
+                                >
+                            </div>
+                            
+                            <input type="hidden" name="campaign_token" value="XzShg" />
+                            <input type="hidden" name="thankyou_url" value="https://aiarmyagents-website-v3.netlify.app/thank-you"/>
+                            <input type="hidden" name="start_day" value="0" />
+                            
+                            <button type="submit" class="btn btn-primary btn-block btn-large">
+                                Get Instant Demo
+                                <svg class="btn-icon" width="20" height="20" viewBox="0 0 20 20" fill="none">
+                                    <path d="M7.5 15L12.5 10L7.5 5" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg>
+                            </button>
+                        </form>
+                        
+                        <p class="form-disclaimer">
+                            We'll send you a demo link instantly. No spam, ever.
+                        </p>
+                        
+                        <div class="optin-footer">
+                            <p>Or call now to hear it live:</p>
+                            <a href="tel:+18483455850" class="demo-phone">
+                                <span class="phone-ring">
+                                    <span class="ring-animate"></span>
+                                    <span class="ring-dot"></span>
+                                </span>
+                                +1 (848) 345 5850
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Social Proof Bar -->
+    <section class="social-proof-bar">
+        <div class="container">
+            <div class="proof-items">
+                <div class="proof-item">
+                    <span class="industry-icon">🔧</span>
+                    <span>Plumbing</span>
+                </div>
+                <div class="proof-item">
+                    <span class="industry-icon">🦷</span>
+                    <span>Dental</span>
+                </div>
+                <div class="proof-item">
+                    <span class="industry-icon">⚖️</span>
+                    <span>Legal</span>
+                </div>
+                <div class="proof-item">
+                    <span class="industry-icon">❄️</span>
+                    <span>HVAC</span>
+                </div>
+                <div class="proof-item">
+                    <span class="industry-icon">🏠</span>
+                    <span>Real Estate</span>
+                </div>
+                <div class="proof-item">
+                    <span class="industry-icon">⚕️</span>
+                    <span>Medical</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Problem Section -->
+    <section class="problem-section">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">You're Losing Money <span class="text-gradient">Right Now</span></h2>
+                <p class="section-subtitle">Every missed call is a lost customer going to your competitor</p>
+            </div>
+            
+            <div class="stats-grid">
+                <div class="stat-card">
+                    <div class="stat-icon">📞</div>
+                    <div class="stat-number">62%</div>
+                    <div class="stat-description">of your calls go unanswered during busy times</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-icon">🌙</div>
+                    <div class="stat-number">85%</div>
+                    <div class="stat-description">of new customers call outside business hours</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-icon">💸</div>
+                    <div class="stat-number">$47K</div>
+                    <div class="stat-description">average yearly loss from missed opportunities</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- How It Works Section -->
+    <section id="how-it-works" class="solution-section">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Up and Running in <span class="text-gradient">Under 10 Minutes</span></h2>
+                <p class="section-subtitle">No technical skills required - if you can send an email, you can do this</p>
+            </div>
+            
+            <div class="steps-grid">
+                <div class="step-card">
+                    <div class="step-number">1</div>
+                    <h3 class="step-title">Choose Your Voice</h3>
+                    <p class="step-description">Pick a friendly voice and personality that matches your brand</p>
+                </div>
+                <div class="step-card">
+                    <div class="step-number">2</div>
+                    <h3 class="step-title">Set Your Script</h3>
+                    <p class="step-description">Tell your AI what to say - we have templates for every industry</p>
+                </div>
+                <div class="step-card">
+                    <div class="step-number">3</div>
+                    <h3 class="step-title">Forward Your Calls</h3>
+                    <p class="step-description">Keep your existing number - just forward calls when you're busy</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Grid -->
+    <section id="features" class="features-section">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Everything You Need to <span class="text-gradient">Grow Your Business</span></h2>
+                <p class="section-subtitle">Built for busy local businesses that live off the phone</p>
+            </div>
+            
+            <div class="features-grid">
+                <div class="feature-card">
+                    <div class="feature-icon">⚡</div>
+                    <h3 class="feature-title">Instant Answers, Every Time</h3>
+                    <p class="feature-description">Zero hold time. Your AI picks up instantly and sounds just like your best receptionist</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">📅</div>
+                    <h3 class="feature-title">Books Appointments Automatically</h3>
+                    <p class="feature-description">Syncs with your calendar to schedule jobs without you lifting a finger</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">🎯</div>
+                    <h3 class="feature-title">Qualifies Every Lead</h3>
+                    <p class="feature-description">Asks the right questions to ensure you only get serious customers</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">📱</div>
+                    <h3 class="feature-title">SMS Follow-Ups</h3>
+                    <p class="feature-description">Automatically texts appointment details and reminders to customers</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">📊</div>
+                    <h3 class="feature-title">Know Why People Call</h3>
+                    <p class="feature-description">See exactly what customers want without listening to voicemails</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">🔄</div>
+                    <h3 class="feature-title">Works With Your Tools</h3>
+                    <p class="feature-description">Connects to your existing CRM, calendar, and booking systems</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ROI Calculator -->
+    <section class="roi-section">
+        <div class="container">
+            <div class="roi-card">
+                <div class="roi-content">
+                    <h2 class="roi-title">Calculate Your Lost Revenue</h2>
+                    <p class="roi-subtitle">See how much missed calls are really costing you</p>
+                    
+                    <div class="calculator-form">
+                        <div class="form-group">
+                            <label>Calls per week</label>
+                            <input type="number" id="calls-input" value="120" class="form-input">
+                        </div>
+                        <div class="form-group">
+                            <label>Average job value</label>
+                            <input type="number" id="deal-value" value="500" class="form-input">
+                        </div>
+                        <div class="form-group">
+                            <label>Your booking rate %</label>
+                            <input type="number" id="close-rate" value="30" class="form-input">
+                        </div>
+                    </div>
+                    
+                    <div class="roi-results">
+                        <div class="result-item">
+                            <span class="result-label">Missed Calls Monthly</span>
+                            <span class="result-value" id="missed-leads">335</span>
+                        </div>
+                        <div class="result-item">
+                            <span class="result-label">Lost Revenue Monthly</span>
+                            <span class="result-value text-gradient" id="lost-revenue">$12,600</span>
+                        </div>
+                    </div>
+                    
+                    <p class="roi-note">
+                        Our AI receptionist typically pays for itself within the first 3 days
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Industry Use Cases -->
+    <section id="industries" class="industries-section">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Trusted by Your Industry</h2>
+                <p class="section-subtitle">Pre-configured for your specific business needs</p>
+            </div>
+            
+            <div class="industry-tabs">
+                <div class="tab-buttons">
+                    <button class="tab-btn active" data-tab="plumbing">Plumbing & HVAC</button>
+                    <button class="tab-btn" data-tab="dental">Dental & Medical</button>
+                    <button class="tab-btn" data-tab="legal">Legal Services</button>
+                    <button class="tab-btn" data-tab="realestate">Real Estate</button>
+                </div>
+                
+                <div class="tab-content">
+                    <div class="industry-card active" id="plumbing">
+                        <div class="industry-stats">
+                            <div class="industry-stat">
+                                <span class="stat-value">47%</span>
+                                <span class="stat-label">more emergency bookings</span>
+                            </div>
+                            <div class="industry-stat">
+                                <span class="stat-value">24/7</span>
+                                <span class="stat-label">emergency dispatch</span>
+                            </div>
+                            <div class="industry-stat">
+                                <span class="stat-value">$2,400</span>
+                                <span class="stat-label">avg monthly revenue increase</span>
+                            </div>
+                        </div>
+                        <blockquote class="industry-quote">
+                            "We went from missing half our emergency calls to capturing every single one. Game changer for our on-call revenue."
+                            <cite>- James H., H&J Plumbing</cite>
+                        </blockquote>
+                    </div>
+                    
+                    <div class="industry-card" id="dental">
+                        <div class="industry-stats">
+                            <div class="industry-stat">
+                                <span class="stat-value">89%</span>
+                                <span class="stat-label">appointment booking rate</span>
+                            </div>
+                            <div class="industry-stat">
+                                <span class="stat-value">40%</span>
+                                <span class="stat-label">reduction in no-shows</span>
+                            </div>
+                            <div class="industry-stat">
+                                <span class="stat-value">$3,200</span>
+                                <span class="stat-label">monthly revenue saved</span>
+                            </div>
+                        </div>
+                        <blockquote class="industry-quote">
+                            "Our AI receptionist handles appointment scheduling perfectly. Patients love the instant response, and we've cut front desk costs by 60%."
+                            <cite>- Dr. Michael Chen, Premier Dental Group</cite>
+                        </blockquote>
+                    </div>
+                    
+                    <div class="industry-card" id="legal">
+                        <div class="industry-stats">
+                            <div class="industry-stat">
+                                <span class="stat-value">73%</span>
+                                <span class="stat-label">lead qualification rate</span>
+                            </div>
+                            <div class="industry-stat">
+                                <span class="stat-value">$125</span>
+                                <span class="stat-label">cost per qualified lead saved</span>
+                            </div>
+                            <div class="industry-stat">
+                                <span class="stat-value">18hrs</span>
+                                <span class="stat-label">weekly time saved</span>
+                            </div>
+                        </div>
+                        <blockquote class="industry-quote">
+                            "The AI screens potential clients brilliantly, only scheduling consultations with qualified leads. It's like having a paralegal answering phones 24/7."
+                            <cite>- Amanda Foster, Foster & Associates</cite>
+                        </blockquote>
+                    </div>
+                    
+                    <div class="industry-card" id="realestate">
+                        <div class="industry-stats">
+                            <div class="industry-stat">
+                                <span class="stat-value">62%</span>
+                                <span class="stat-label">more property showings</span>
+                            </div>
+                            <div class="industry-stat">
+                                <span class="stat-value">24/7</span>
+                                <span class="stat-label">buyer inquiry response</span>
+                            </div>
+                            <div class="industry-stat">
+                                <span class="stat-value">$8,400</span>
+                                <span class="stat-label">avg commission increase/mo</span>
+                            </div>
+                        </div>
+                        <blockquote class="industry-quote">
+                            "Never miss another buyer lead! Our AI schedules showings instantly, even at midnight. Closed 3 extra deals last month alone."
+                            <cite>- Robert Martinez, Century Realty</cite>
+                        </blockquote>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials -->
+    <section class="testimonials-section">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Real Results from <span class="text-gradient">Real Businesses</span></h2>
+                <p class="section-subtitle">Join 2,800+ businesses never missing a lead</p>
+            </div>
+            
+            <div class="testimonials-grid">
+                <div class="testimonial-card">
+                    <div class="testimonial-rating">⭐⭐⭐⭐⭐</div>
+                    <p class="testimonial-text">"Booked 37 extra jobs in the first week alone. My only regret is not starting sooner."</p>
+                    <div class="testimonial-author">
+                        <img src="https://i.pravatar.cc/150?img=11" alt="Tom Brown" class="testimonial-avatar" loading="lazy">   
+                        <div>
+                            <div class="author-name">Tom Brown</div>
+                            <div class="author-company">Brown's Electric, Manchester</div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="testimonial-card">
+                    <div class="testimonial-rating">⭐⭐⭐⭐⭐</div>
+                    <p class="testimonial-text">"Patients love that they can book appointments 24/7. We've reduced no-shows by 40%."</p>
+                    <div class="testimonial-author">
+                        <img src="https://i.pravatar.cc/48?img=5" alt="Dr Sarah Patel" loading="lazy">
+                        <div>
+                            <div class="author-name">Dr. Sarah Patel</div>
+                            <div class="author-company">Smile Dental Practice</div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="testimonial-card">
+                    <div class="testimonial-rating">⭐⭐⭐⭐⭐</div>
+                    <p class="testimonial-text">"Cut our admin costs by $1,800/month. The AI handles everything our receptionist used to do."</p>
+                    <div class="testimonial-author">
+                        <img src="https://i.pravatar.cc/48?img=8" alt="Mark Richardson" loading="lazy">
+                        <div>
+                            <div class="author-name">Mark Richardson</div>
+                            <div class="author-company">Richardson Law</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Pricing Section -->
+    <section id="pricing" class="pricing-preview">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Simple Pricing That <span class="text-gradient">Makes Sense</span></h2>
+                <p class="section-subtitle">Start free. No setup fees. Cancel anytime.</p>
+            </div>
+            
+            <div class="pricing-grid">
+                <div class="pricing-card">
+                    <div class="plan-name">Starter</div>
+                    <div class="plan-price">
+                        <span class="currency">$</span>
+                        <span class="amount">67</span>
+                        <span class="period">/month</span>
+                    </div>
+                    <ul class="plan-features">
+                        <li>1 Location</li>
+                        <li>500 minutes/month</li>
+                        <li>All voice personalities</li>
+                        <li>SMS follow-ups</li>
+                        <li>Basic reporting</li>
+                    </ul>
+                    <a href="#get-started" class="btn btn-outline btn-block">Start Free Trial</a>
+                </div>
+                
+                <div class="pricing-card featured">
+                    <div class="popular-badge">Most Popular</div>
+                    <div class="plan-name">Growth</div>
+                    <div class="plan-price">
+                        <span class="currency">$</span>
+                        <span class="amount">127</span>
+                        <span class="period">/month</span>
+                    </div>
+                    <ul class="plan-features">
+                        <li>Up to 3 Locations</li>
+                        <li>2,000 minutes/month</li>
+                        <li>Custom greetings</li>
+                        <li>Calendar integration</li>
+                        <li>Priority support</li>
+                        <li>Call recordings</li>
+                    </ul>
+                    <a href="#get-started" class="btn btn-primary btn-block">Start Free Trial</a>
+                </div>
+                
+                <div class="pricing-card">
+                    <div class="plan-name">Scale</div>
+                    <div class="plan-price">
+                        <span class="currency">$</span>
+                        <span class="amount">397</span>
+                        <span class="period">/month</span>
+                    </div>
+                    <ul class="plan-features">
+                        <li>Unlimited Locations</li>
+                        <li>6,000 minutes/month</li>
+                        <li>Custom AI training</li>
+                        <li>API access</li>
+                        <li>Dedicated support</li>
+                        <li>White-label options</li>
+                    </ul>
+                    <a href="#book-demo" class="btn btn-outline btn-block">Book Demo</a>
+                </div>
+            </div>
+            
+            <div class="pricing-footer">
+                <p>All plans include 14-day free trial. No credit card required.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="faq-section">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Common <span class="text-gradient">Questions</span></h2>
+            </div>
+            
+            <div class="faq-grid">
+                <div class="faq-item">
+                    <h3 class="faq-question">Can I keep my existing phone number?</h3>
+                    <p class="faq-answer">Yes! We simply forward your calls when you're busy. Nothing changes for your customers - they still dial your regular number.</p>
+                </div>
+                <div class="faq-item">
+                    <h3 class="faq-question">How natural does the AI sound?</h3>
+                    <p class="faq-answer">Incredibly natural. Most callers can't tell they're not speaking to a human. Listen to our demo line to hear for yourself.</p>
+                </div>
+                <div class="faq-item">
+                    <h3 class="faq-question">What if I need to take over a call?</h3>
+                    <p class="faq-answer">You can jump in anytime. The AI can transfer important calls to you instantly, or you can review and call back later.</p>
+                </div>
+                <div class="faq-item">
+                    <h3 class="faq-question">Do I need any technical skills?</h3>
+                    <p class="faq-answer">Not at all. If you can write a text message, you can set this up. Most businesses are running in under 10 minutes.</p>
+                </div>
+                <div class="faq-item">
+                    <h3 class="faq-question">What happens after the free trial?</h3>
+                    <p class="faq-answer">You'll have full access for 14 days. We'll remind you before it ends. No surprise charges - you choose if and when to continue.</p>
+                </div>
+                <div class="faq-item">
+                    <h3 class="faq-question">Can it book appointments in my system?</h3>
+                    <p class="faq-answer">Yes! We integrate with most popular booking systems and calendars. Your AI receptionist can check availability and book directly.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Final CTA -->
+    <section id="get-started" class="final-cta">
+        <div class="container">
+            <div class="cta-card">
+                <h2 class="cta-title">Ready to Stop Losing Business?</h2>
+                <p class="cta-subtitle">Join 2,800+ businesses capturing every opportunity</p>
+                <div class="cta-actions">
+                    <a href="#hero-form" class="btn btn-primary btn-large">
+                        Start Your 14-Day Free Trial
+                        <svg class="btn-icon" width="20" height="20" viewBox="0 0 20 20" fill="none">
+                            <path d="M7.5 15L12.5 10L7.5 5" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                    </a>
+                </div>
+                <p class="cta-disclaimer">No credit card required • Setup in 10 minutes • Cancel anytime</p>
+                
+                <div class="cta-phone">
+                    <p>Prefer to talk? Call us now:</p>
+                    <a href="tel:{{SUPPORT_PHONE}}" class="phone-number">{{SUPPORT_PHONE}}</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-brand">
+                    <a href="/" class="footer-logo">
+                        <img src="{{LOGO_URL}}" alt="{{BRAND_NAME}} Logo" style="height: 50px; width: auto;" loading="lazy">
+                    </a>
+                </div>
+                
+                <div class="footer-links">
+                    <h4>Product</h4>
+                    <ul>
+                        <li><a href="#features">Features</a></li>
+                        <li><a href="#pricing">Pricing</a></li>
+                        <li><a href="#industries">Industries</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-links">
+                    <h4>Support</h4>
+                    <ul>
+                        <li><a href="/help">Help Center</a></li>
+                        <li><a href="/contact">Contact Us</a></li>
+                        <li><a href="tel:{{SUPPORT_PHONE}}">{{SUPPORT_PHONE}}</a></li>
+                    </ul>
+                </div>
+                
+<div class="footer-links">
+                    <h4>Legal</h4>
+                    <ul>
+                        <li><a href="privacy.html">Privacy Policy</a></li>
+                        <li><a href="terms.html">Terms of Service</a></li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2024 {{BRAND_NAME}}. All rights reserved. Powered by {{AGENCY_NAME}}</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Call Now Sticky Button (Mobile) -->
+    <div class="sticky-cta-mobile">
+        <a href="tel:+18483455850" class="btn btn-primary btn-block">
+            <svg width="20" height="20" viewBox="0 0 20 20" fill="currentColor">
+                <path d="M2 3a1 1 0 011-1h2.153a1 1 0 01.986.836l.74 4.435a1 1 0 01-.54 1.06l-1.548.773a11.037 11.037 0 006.105 6.105l.774-1.548a1 1 0 011.059-.54l4.435.74a1 1 0 01.836.986V17a1 1 0 01-1 1h-2C7.82 18 2 12.18 2 5V3z"/>
+            </svg>
+            Call AI Demo Now
+        </a>
+    </div>
+
+    <script src="js/main.js"></script>
+    <script src="js/calculator.js"></script>
+    <script src="js/white-label-config.js"></script>
+</body>
+</html>

@@ -1,0 +1,332 @@
+/* Demo Page - SalesApe Style */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Inter', sans-serif;
+    background: #0A0A0A;
+    color: #FFFFFF;
+    min-height: 100vh;
+}
+
+/* Header */
+.demo-header {
+    padding: 20px 40px;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background: rgba(10, 10, 10, 0.95);
+    backdrop-filter: blur(10px);
+    z-index: 100;
+}
+
+.header-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    font-size: 20px;
+    font-weight: 700;
+    color: #00FFA3;
+}
+
+.book-call-btn {
+    padding: 12px 24px;
+    background: transparent;
+    border: 2px solid #00FFA3;
+    color: #00FFA3;
+    border-radius: 8px;
+    cursor: pointer;
+    font-weight: 600;
+    transition: all 0.3s;
+}
+
+.book-call-btn:hover {
+    background: #00FFA3;
+    color: #0A0A0A;
+}
+
+/* Main Container */
+.demo-container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 120px 20px 60px;
+    text-align: center;
+}
+
+/* Hero Section */
+.hero-section {
+    margin-bottom: 80px;
+}
+
+h1 {
+    font-size: 48px;
+    font-weight: 700;
+    margin-bottom: 20px;
+    line-height: 1.2;
+}
+
+.text-gradient {
+    background: linear-gradient(135deg, #00FFA3, #00B37F);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.hero-subtitle {
+    font-size: 18px;
+    color: #999999;
+    line-height: 1.6;
+    margin-bottom: 50px;
+}
+
+/* Avatar Section */
+.avatar-section {
+    margin: 50px 0;
+}
+
+.avatar-wrapper {
+    width: 300px;
+    height: 300px;
+    margin: 0 auto 30px;
+    overflow: hidden;
+}
+
+.avatar-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+.voice-demo-btn {
+    padding: 20px 60px;
+    background: linear-gradient(135deg, #00FFA3, #00B37F);
+    color: #0A0A0A;
+    border: none;
+    border-radius: 8px;
+    font-size: 18px;
+    font-weight: 700;
+    cursor: pointer;
+    transition: transform 0.3s;
+    margin-bottom: 20px;
+}
+
+.voice-demo-btn:hover {
+    transform: scale(1.05);
+}
+
+.demo-description {
+    color: #999999;
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+/* Demo Instructions */
+.demo-instructions {
+    margin-top: 30px;
+    padding: 25px 30px;
+    background: #1A1A1A;
+    border-radius: 12px;
+    border: 1px solid #2A2A2A;
+    text-align: left;
+    max-width: 500px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.demo-instructions h3 {
+    color: #FFFFFF;
+    font-size: 18px;
+    font-weight: 600;
+    margin-bottom: 15px;
+}
+
+.demo-instructions ol {
+    list-style: none;
+    counter-reset: instruction-counter;
+    padding-left: 0;
+}
+
+.demo-instructions li {
+    counter-increment: instruction-counter;
+    position: relative;
+    padding-left: 40px;
+    margin-bottom: 12px;
+    color: #CCCCCC;
+    font-size: 15px;
+    line-height: 1.5;
+}
+
+.demo-instructions li:last-child {
+    margin-bottom: 0;
+}
+
+.demo-instructions li::before {
+    content: counter(instruction-counter);
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 28px;
+    height: 28px;
+    background: linear-gradient(135deg, #00FFA3, #00B37F);
+    color: #0A0A0A;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 700;
+    font-size: 14px;
+}
+
+.demo-instructions li strong {
+    color: #00FFA3;
+    font-weight: 600;
+}
+
+/* Book Call Section */
+.book-call-section {
+    margin-top: 40px;
+    padding: 40px 30px;
+    text-align: center;
+    background: linear-gradient(135deg, rgba(0, 255, 163, 0.05), rgba(0, 179, 127, 0.05));
+    border-radius: 16px;
+    border: 2px solid rgba(0, 255, 163, 0.2);
+}
+
+.book-call-section h3 {
+    color: #FFFFFF;
+    font-size: 22px;
+    font-weight: 600;
+    margin-bottom: 25px;
+    line-height: 1.4;
+}
+
+.btn {
+    display: inline-block;
+    text-decoration: none;
+    font-weight: 700;
+    border-radius: 8px;
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
+
+.btn-primary {
+    background: linear-gradient(135deg, #00FFA3, #00B37F);
+    color: #0A0A0A;
+    border: none;
+}
+
+.btn-primary:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 24px rgba(0, 255, 163, 0.3);
+}
+
+.btn-large {
+    padding: 18px 50px;
+    font-size: 18px;
+}
+
+/* Booking Section */
+.booking-section {
+    padding: 60px 40px;
+    background: #1A1A1A;
+    border-radius: 20px;
+    border: 1px solid #2A2A2A;
+}
+
+.booking-section h2 {
+    font-size: 36px;
+    margin-bottom: 40px;
+}
+
+.booking-form {
+    max-width: 500px;
+    margin: 0 auto;
+}
+
+.form-row {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 15px;
+    margin-bottom: 15px;
+}
+
+.booking-form input,
+.booking-form select {
+    width: 100%;
+    padding: 15px;
+    background: #0A0A0A;
+    border: 1px solid #2A2A2A;
+    color: #FFFFFF;
+    border-radius: 8px;
+    font-size: 16px;
+    margin-bottom: 15px;
+}
+
+.booking-form input::placeholder {
+    color: #666666;
+}
+
+.booking-form select {
+    cursor: pointer;
+}
+
+.submit-btn {
+    width: 100%;
+    padding: 18px;
+    background: linear-gradient(135deg, #00FFA3, #00B37F);
+    color: #0A0A0A;
+    border: none;
+    border-radius: 8px;
+    font-size: 18px;
+    font-weight: 700;
+    cursor: pointer;
+    transition: transform 0.3s;
+}
+
+.submit-btn:hover {
+    transform: scale(1.02);
+}
+
+/* Audio Visualizer */
+.audio-visualizer-container {
+    margin: 20px auto;
+    background: #1A1A1A;
+    border-radius: 10px;
+    padding: 20px;
+    border: 1px solid #2A2A2A;
+}
+
+#audioVisualizer canvas {
+    width: 100%;
+    height: 150px;
+    display: block;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    h1 {
+        font-size: 32px;
+    }
+
+    .form-row {
+        grid-template-columns: 1fr;
+    }
+
+    .voice-demo-btn {
+        padding: 15px 40px;
+        font-size: 16px;
+    }
+
+    #audioVisualizer {
+        max-width: 100%;
+        height: 80px;
+    }
+}

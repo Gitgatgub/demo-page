@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Super-Rep Demo - Sarah</title>
+    <link rel="stylesheet" href="css/demo.css">
+</head>
+<body>
+    <!-- Header -->
+    <header class="demo-header">
+        <div class="header-container">
+            <div class="logo">
+                <span>AI ARMY AGENTS</span>
+            </div>
+            <button class="book-call-btn">Book a Call</button>
+        </div>
+    </header>
+
+    <!-- Main Demo Section -->
+    <div class="demo-container">
+        <div class="hero-section">
+            <h1>TALK TO SARAH, OUR AI <span class="text-gradient">SUPER-REP</span></h1>
+            <p class="hero-subtitle">
+                See how Sarah could qualify inbound leads and book appointments for you.
+                She responds to enquiries in seconds whether by phone, email, SMS, chatbot and more!
+            </p>
+
+            <!-- Avatar and Demo Button -->
+            <div class="avatar-section">
+                <div class="avatar-wrapper">
+                    <img src="avatars/avatar14.png" alt="Sarah AI Assistant" class="avatar-img">
+                </div>
+
+                <button id="startVoiceDemo" class="voice-demo-btn">
+                    START VOICE DEMO
+                </button>
+
+                <p class="demo-description">
+                    Talk to Sarah, our AI super-rep, to see how<br>
+                    she could help your business.
+                </p>
+
+                <p id="phoneInstruction" style="display: none; color: #ff4444; font-size: 16px; margin-top: 15px; font-weight: 600;">
+                    Press the green phone button to talk to Sarah
+                </p>
+            </div>
+        </div>
+
+        <!-- Book a Demo Call Section -->
+        <div class="booking-section">
+            <h2>BOOK A DEMO <span class="text-gradient">CALL</span></h2>
+
+            <form class="booking-form" id="bookingForm" action="https://app.getresponse.com/add_subscriber.html" accept-charset="utf-8" method="post">
+                <div class="form-row">
+                    <input type="text" name="first_name" placeholder="First Name*" required>
+                    <input type="text" name="last_name" placeholder="Last Name*" required>
+                </div>
+
+                <input type="email" name="email" placeholder="Email*" required>
+
+                <select name="leadVolume" required>
+                    <option value="">How many inbound leads do you handle each month?</option>
+                    <option value="0-50">0-50 leads</option>
+                    <option value="50-100">50-100 leads</option>
+                    <option value="100-250">100-250 leads</option>
+                    <option value="250+">250+ leads</option>
+                </select>
+
+                <input type="hidden" name="campaign_token" value="XzShg" />
+                <input type="hidden" name="thankyou_url" value="https://calendly.com/rich-williamsjvzoo/new-meeting"/>
+
+                <button type="submit" class="submit-btn">Book Demo Call</button>
+            </form>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/gh/VapiAI/html-script@latest/dist/assets/index.js"></script>
+    <script src="js/white-label-config.js"></script>
+    <script src="js/demo.js"></script>
+</body>
+</html>
